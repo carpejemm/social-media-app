@@ -1,0 +1,19 @@
+.post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 15px;
+}
+
+.post-container .post {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .post-container {
+    width: 90%;
+  }
+}

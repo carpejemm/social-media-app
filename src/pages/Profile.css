@@ -1,0 +1,23 @@
+.profile-container {
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 15px;
+}
+
+.profile-container .profile-card {
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-container {
+    width: 90%;
+  }
+}
