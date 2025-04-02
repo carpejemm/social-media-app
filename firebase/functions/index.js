@@ -3,10 +3,6 @@ const { onRequest } = require("firebase-functions/v2/https");
 const logger = require("firebase-functions/logger");
 const axios = require("axios")
 
-
-// const POSTS_API = "https://jsonplaceholder.typicode.com/posts";
-// const UNSPLASH_API = "https://picsum.photos/300?random=2";
-
 exports.fetchImagesAndTexts = onRequest({ cors: true }, async (req, res) => {
     try {
         const postResponse = await axios.get(process.env.POSTS_API);
